@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  font-family: "Plus Jakart Sans", sans-serif;
+}
+h3 {
+  font-size: clamp(rem(15), 0.282vw + 0.871rem, rem(18));
+}
+
+
+p,
+#btn-mark-all,
+span,
+.notfi__counter {
+  font-size: clamp(rem(14), 0.188vw + 0.768rem, rem(16));
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 50px;
+}
+a,
+a:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+}

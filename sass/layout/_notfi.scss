@@ -1,0 +1,119 @@
+@use "../abstracts/" as *;
+body {
+  background-color: $n-Very-light-grayish-blue;
+}
+
+.notfi {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+  margin-top: rem(30);
+  border-radius: rem(5);
+  width: min(85%, 700px);
+  padding-inline: rem(20);
+  padding-block: rem(25);
+  margin-inline: auto;
+  background-color: $n-White;
+  box-shadow: 1px 0px 7px 0px $n-Dark-grayish-blue;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__counter {
+    padding: rem(4) rem(10);
+    background-color: $p-Blue;
+    border-radius: rem(5);
+    color: $n-White;
+  }
+
+  &__content {
+    display: flex;
+    gap: rem(10);
+    align-items: center;
+    position: relative;
+    padding: rem(10) rem(15);
+    border-radius: rem(8);
+    &.unread {
+      background-color: $n-Light-grayish-blue-1;
+    }
+  }
+
+  &__img {
+    align-self: flex-start;
+  }
+
+  &__content-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__details {
+    width: fit-content;
+    position: relative;
+    margin-block-end: rem(5);
+  }
+  &--personName{
+    color: $n-Very-dark-blue !important;
+    &:hover{
+      color: $p-Blue !important;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.2s;
+    color: $n-Dark-grayish-blue;
+    &:hover {
+      color: $p-Blue;
+    }
+  }
+  &--btnAll {
+    color: $n-Very-dark-blue;
+  }
+
+  &__action {
+    position: relative;
+    color: $n-Dark-grayish-blue;
+  }
+
+  &__time {
+    width: fit-content;
+    color: $n-Dark-grayish-blue;
+  }
+
+  &__picture {
+    align-self: end;
+    position: relative;
+    top: rem(-40);
+  }
+
+  //if notficaton contains picture then set max-height
+  &--withPicture {
+    max-height: rem(50);
+  }
+
+  &__message {
+    margin-block-start: rem(10);
+    padding: rem(10) rem(15);
+    border: 1px solid $n-Dark-grayish-blue;
+    border-radius: rem(5);
+    color: $n-Dark-grayish-blue;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $n-Light-grayish-blue-2;
+      border-color: $n-Light-grayish-blue-2;
+    }
+  }
+}
+//if class unread exist then create circle at the end of notficaton location
+.unread .red-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $p-Red;
+  display: inline-block;
+}

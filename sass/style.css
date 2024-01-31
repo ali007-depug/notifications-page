@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Plus Jakart Sans", sans-serif;
+}
+
+h3 {
+  font-size: clamp(0.9375rem, 0.282vw + 0.871rem, 1.125rem);
+}
+
+p,
+#btn-mark-all,
+span,
+.notfi__counter {
+  font-size: clamp(0.875rem, 0.188vw + 0.768rem, 1rem);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 50px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.notfi {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  margin-top: 1.875rem;
+  border-radius: 0.3125rem;
+  width: min(85%, 700px);
+  padding-inline: 1.25rem;
+  padding-block: 1.5625rem;
+  margin-inline: auto;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1px 0px 7px 0px hsl(219, 12%, 42%);
+}
+.notfi__header {
+  display: flex;
+  justify-content: space-between;
+}
+.notfi__counter {
+  padding: 0.25rem 0.625rem;
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 0.3125rem;
+  color: hsl(0, 0%, 100%);
+}
+.notfi__content {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  position: relative;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.5rem;
+}
+.notfi__content.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+.notfi__img {
+  align-self: flex-start;
+}
+.notfi__content-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.notfi__details {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  margin-block-end: 0.3125rem;
+}
+.notfi--personName {
+  color: hsl(224, 21%, 14%) !important;
+}
+.notfi--personName:hover {
+  color: hsl(219, 85%, 26%) !important;
+}
+.notfi__btn {
+  cursor: pointer;
+  font-weight: 800;
+  transition: all 0.2s;
+  color: hsl(219, 12%, 42%);
+}
+.notfi__btn:hover {
+  color: hsl(219, 85%, 26%);
+}
+.notfi--btnAll {
+  color: hsl(224, 21%, 14%);
+}
+.notfi__action {
+  position: relative;
+  color: hsl(219, 12%, 42%);
+}
+.notfi__time {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: hsl(219, 12%, 42%);
+}
+.notfi__picture {
+  align-self: end;
+  position: relative;
+  top: -2.5rem;
+}
+.notfi--withPicture {
+  max-height: 3.125rem;
+}
+.notfi__message {
+  margin-block-start: 0.625rem;
+  padding: 0.625rem 0.9375rem;
+  border: 1px solid hsl(219, 12%, 42%);
+  border-radius: 0.3125rem;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.notfi__message:hover {
+  background-color: hsl(205, 33%, 90%);
+  border-color: hsl(205, 33%, 90%);
+}
+
+.unread .red-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+  display: inline-block;
+}
+
+.attribution {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  margin-block-start: 1.25rem;
+  font-size: clamp(0.6875rem, 0.282vw + 0.621rem, 0.875rem);
+}
+.attribution a {
+  background-color: hsl(224, 21%, 14%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.attribution a:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 21%, 14%);
+  border-color: hsl(224, 21%, 14%);
+}/*# sourceMappingURL=style.css.map */
