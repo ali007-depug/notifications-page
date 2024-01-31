@@ -112,13 +112,21 @@ body {
   width: fit-content;
   color: hsl(219, 12%, 42%);
 }
-.notfi__picture {
-  align-self: end;
-  position: relative;
-  top: -2.5rem;
-}
 .notfi--withPicture {
   max-height: 3.125rem;
+  position: relative;
+}
+.notfi__picture {
+  position: absolute;
+  right: 0;
+  top: 1.5625rem;
+  width: 40px;
+}
+@media (min-width: 992px) {
+  .notfi__picture {
+    width: 50px;
+    top: 0;
+  }
 }
 .notfi__message {
   margin-block-start: 0.625rem;

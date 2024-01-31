@@ -84,17 +84,22 @@ body {
     color: $n-Dark-grayish-blue;
   }
 
-  &__picture {
-    align-self: end;
-    position: relative;
-    top: rem(-40);
-  }
-
   //if notficaton contains picture then set max-height
   &--withPicture {
     max-height: rem(50);
+    position: relative;
   }
 
+  &__picture{
+    position: absolute;
+    right: 0;
+    top: rem(25);
+    width: 40px;
+    @include breakpoint(lg){
+      width: 50px;
+      top: 0;
+    }
+  }
   &__message {
     margin-block-start: rem(10);
     padding: rem(10) rem(15);
